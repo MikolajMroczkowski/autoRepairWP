@@ -7,8 +7,6 @@ exit();
 if($_POST){
     echo "Checking...";
     require "config.php";
-    echo $_POST['pass'];
-    echo $user;
     if($_POST['pass']==$pass&&$_POST['user']==$user){
         $_SESSION['zalogowany'] = true;
         header("Location: index.php");
